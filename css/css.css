@@ -1,0 +1,243 @@
+*{margin: 0px; padding: 0px; box-sizing: border-box;
+}
+body {
+    font-family: 'varela round' , sans-serif;
+   }
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+}
+.section-header {
+    text-align: center;   
+}
+.section-header .section-title{
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 9px;
+    margin-top: 6px;
+}
+.section-header .line{
+    display: block;
+    width: 62px;
+    height: 4px;
+    background-color: royalblue;
+   margin: 0  auto  70px  auto;
+}
+.container {
+    width:80%;
+    margin: auto;
+    }
+.nav{
+    width:60%;
+    float: left;
+    text-align: right;
+    padding-top: 20px;;
+}
+.ltr{
+    position: relative;
+}
+.ltr:after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top:0;
+    left:0;
+    background-color: #333; 
+}
+.ltr:hover:after{
+    width: 100%;
+    height: 100%;
+    transition: 0.8s;
+    z-index: -1;
+     }
+.header {
+    width:100%;
+    position: fixed;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, .5);
+}
+.nav  li{
+    list-style: none;
+    display: inline-block;
+    margin-left: auto;
+}
+.nav li> a {
+    padding: 12px;
+    color: bisque;   display: block;
+    margin-left: auto;
+    text-decoration: none;
+
+    
+}
+.bp {
+    position: absolute;
+    width: 120px;
+    padding:5px;
+    background-color: blue;
+    text-align: center;
+    left:78%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s;
+    }
+    .dd:hover + .bp{
+        visibility: visible;
+        opacity:1;
+    }
+    .header .logo {width:40%; padding-top: 10px;;
+        float: left;
+}
+
+.home {
+    height:100vh;
+    background-image:url(../1.jpg);
+    background-position: cover;
+    position: relative;
+}
+.home-content{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width:65%;
+}
+.home-content .fff {
+    color: #fff;
+    font-size: 55px;
+    text-transform: uppercase;
+}
+.para {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+   
+}
+.home-content .btn {
+    min-width: 160px;
+    padding: 15px 0;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    font-size: 18px;
+}
+.btn-sr{margin-right: 10px;}
+.btn-lr{background-color: blue;  color: #cacaca;}
+.hover-2{
+    transition:opacity 0.5;
+}
+.hover-2:hover{
+    opacity: 0.7;
+}
+.header .container .header-content .nav > li > a:after ,
+.header .container .header-content .nav  > li > a.active:after{
+    content:"";
+    width:0;
+    height:3px;
+    display: block;
+    background-color: rgb(22, 204, 218);
+    margin-top: 2px;
+    transition: .5s;
+}
+.header .container .header-content .nav > li > a.active:after{
+ width:100%;
+}
+.header .container .header-content .nav > li > a:hover:after{
+    width: 100%;
+}
+.pd-y {
+    padding:120px 0;
+}
+.about-content{
+    text-align: center;
+    height: 350px;
+    overflow: hidden;
+}
+.about-item {
+    width: 30%;
+    float: left;
+    text-align: center;
+    border:1px solid  #888;
+    padding: 30px 15px;
+}
+.about-item.mg{
+    margin: 0 5%;
+}
+.icon{
+    color: #6195ff;
+    margin-bottom: 10px;
+}
+.about-item-title {
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    transition: color .5s;
+}
+.about-content p {
+    letter-spacing: 2px;
+    line-height: 22px;
+    margin-bottom: 15px;
+    color:#899;
+}
+.about-item-link {
+    color: #6195ff;
+    text-transform: capitalize;
+}
+.about-item:hover .about-item-title{
+    color: #fff;
+    transition: color 1s;
+}
+.ffr{
+height: 1200px;
+background-color: rgb(160, 160, 160);
+}
+.rr{
+    margin-bottom: 20px;
+}
+/* ffffooooteeer */
+.footer{     background-color: #4c4d52;
+    text-align: center;
+    height: 300px;
+    padding: 60px 0;}
+.footer-link{    list-style: none;
+    margin: 20px 0;}
+
+.footer-link li{     
+    background-color: #5e8ff1;
+    display: inline-block;
+        width:50px;
+        height: 50px;
+        position: relative;
+        z-index: 1;
+        border-radius: 50%;}    
+        .footer-link li a{ color: #fff;
+            line-height: 50px;
+            font-size: 23px;
+        }
+        .footer {  color:#999;
+            font-size: 12px;
+            text-transform: uppercase;}
+
+.footer-link li::after{
+    position: absolute;
+    content: "";
+    opacity: 0;
+    transition: .3s;
+    background-color: #0954ec;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0%;
+    bottom: 0;
+}            
+.footer-link li:hover:after{
+    opacity: .7;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 50%;}

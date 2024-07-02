@@ -1,0 +1,25 @@
+.item2{
+    width:30%;
+    float: left;
+    border: 1px solid #a8a8a8 ;
+    padding: 30px 15px 30px 70px;
+    position: relative;
+    margin-bottom: 20px;;
+}
+
+
+.icon{position: absolute;
+    left:15px;
+    top:26px;
+    color:#6195ff;}
+.p-tit{
+    text-transform: capitalize;
+ margin-bottom: 15px;
+ color: #a09c9c;
+}
+.titl2{ text-transform: capitalize;
+    margin-bottom: 20px;
+   }
+   
+.item2:hover .titl2{color: aliceblue;}
+   

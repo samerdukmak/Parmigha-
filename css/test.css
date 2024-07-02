@@ -1,0 +1,48 @@
+.customer-review {
+    position: relative;
+    background-image: url(../images/zzz.png);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 350px;
+}   
+.review-content{
+    overflow: hidden;
+    width: 90%;
+    margin: auto;
+}
+.review-item {
+    float: left;
+    width: 50%;
+    color: #fff;
+    padding-right: 20px;
+    padding-top: 55px;
+    margin-bottom: 110px;
+}
+.review-header{
+   padding:90px 20px 10px 150px;
+   position:relative;
+   line-height: 1.4;
+   margin-bottom: 20px;
+}
+.review-header img{
+   position: absolute;
+   top: 82px;
+   left: 65px;
+   border-radius: 50%;
+}
+.review-desc{
+   line-height: 1.5;
+   margin-left: 80px;
+   font-size: 14px;
+   text-transform:capitalize;
+}
+.review-header span{
+   color: #6195ff;
+}
+
+.img-back2 {
+    height:350px;
+    background-attachment: fixed;
+position: relative;
+    background-size: cover;
+}

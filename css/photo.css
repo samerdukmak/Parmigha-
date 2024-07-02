@@ -1,0 +1,27 @@
+.img-back {
+    height:350px;
+    background-attachment: fixed;
+position: relative;
+    background-size: cover;
+}
+.photo-items{
+    overflow:hidden;
+    padding-top: 130px;
+}
+.itttem4{
+    width: 25%;
+    float: left;
+    text-align:center;
+}
+.text {
+    color: #fff;
+}
+
+.title45{
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+}
+ .icon2{  color:#6195ff;
+    margin-bottom: 15px;}
+   

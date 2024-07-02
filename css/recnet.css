@@ -1,0 +1,48 @@
+.recent-list{list-style: none;
+margin: 10px 0;
+}
+.recent-team{height: 746px;}
+
+
+.recent-content{overflow: hidden;   background-color: #f8f8f8; }
+.recent-item{  float: left;
+    width: 30%;
+    background-color: #fff;
+    position: relative;
+    box-sizing: border-box;
+   }
+.recent-list li i{  color: #5e90f5;}
+    .recent-list li{    display: inline-block;
+        font-size: 13px;
+        padding: 0 7px;}
+.recent-item-img{  width: 100%;
+margin-left:25px ;     }
+     .recent-info{ padding: 20px;}
+.recent-item::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: 1s;
+    opacity: 0;
+    background-color: #6195ff;
+}
+        
+    .recent-item:hover:after{ 
+        width: 100%;
+        height: 100%;
+        opacity: .5;
+    }
+.about-content{position: relative;}  
+.recent-title{ font-weight: bold;
+    margin: 20px 0;
+    margin-bottom: 20px; }
+    .recent-p{ color: #949494;
+        margin-bottom: 25px;
+        line-height: 1.5;}
+        .recent-info a{color: #6195ff;
+        }
